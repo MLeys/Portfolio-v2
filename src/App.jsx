@@ -2,7 +2,8 @@ import * as React from 'react';
 import ButtonUnstyled from '@mui/base/ButtonUnstyled';
 import { Route, Routes, Navigate, useNavigate } from "react-router-dom";
 import { useState } from 'react'
-import './App.css'
+// import './App.css'
+
 
 import HomePage from './Pages/HomePage/HomePage';
 import MainLayout from './Pages/MainLayout/MainLayout';

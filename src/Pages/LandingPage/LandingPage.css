@@ -13,11 +13,17 @@
   /* width: '100vw'; */
 }
 .rail {
-  background-color: rgba(3, 3, 3, 0.183);
+
 
 }
 #leftRail{
-  left: 8vw;
+  vertical-align: middle;
+  background-color: rgba(0, 0, 0, 0.138);
+  top: 25vh;
+  left: 25vw;
+  width: 50vw;
+  height: 25vh;
+  position: realtive;
+  /* font-size: 3rem; */
 
-  width: 80vw;
 }

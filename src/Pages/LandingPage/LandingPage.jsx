@@ -1,5 +1,6 @@
 import React from "react";
-import './LandingPage.css'
+// import './LandingPage.css'
+import { Link, NavLink } from "react-router-dom";
 import {
   Container,
   Segment,
@@ -23,17 +24,29 @@ function LandingPage() {
         className="landingImage"
         fluid={true} 
         src='https://imgur.com/bUeqQX5.png' 
+        
       />
 
       <Rail
         id='leftRail'
         className="rail" 
+        close="very"
         internal position='left' 
         size="massive"
+        style={{ placeItems: 'center', verticalAlign: 'middle'}}
         >
-        <h2> Michael Leys </h2>
-        <h3>Software Engineer / Web Development</h3>
+          <Container as={Link} to='/portfolio'>
+            <p>
+              <div>Michael Leys</div>
+              <div>Software Engineer / Web Development</div>
+            </p>
+          </Container>
+
+        
       </Rail>
+      <Button as={Link} to='/portfolio'>
+          Main Page
+      </Button>
 
     </Container>
 
