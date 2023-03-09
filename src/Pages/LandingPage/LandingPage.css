@@ -1,0 +1,23 @@
+:root {
+  color: black;
+
+}
+.ui.segment {
+  color: black;
+}
+.landingContainer {
+  /* width: '100vw'; */
+}
+
+.landingImage {
+  /* width: '100vw'; */
+}
+.rail {
+  background-color: rgba(3, 3, 3, 0.183);
+
+}
+#leftRail{
+  left: 8vw;
+
+  width: 80vw;
+}
