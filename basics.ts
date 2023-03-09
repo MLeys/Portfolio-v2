@@ -1,7 +1,10 @@
 let userName = 'Mike';
-let hasLoggedIn = true;
+let hasLoggedIn: boolean = true;
 
 
-hasLoggedIn += " Leys"
+
 
 console.log(hasLoggedIn)
+
+
+let myRegex: RegExp = /foo/
