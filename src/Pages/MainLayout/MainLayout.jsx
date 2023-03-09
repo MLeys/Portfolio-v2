@@ -2,17 +2,17 @@ import React from "react";
 import { Outlet } from 'react-router-dom'
 import { Link } from 'react-router-dom'
 import { styled } from '@mui/material/styles';
-import Button from '@mui/material/Button';
-import Box from '@mui/material/Box';
-import Paper from '@mui/material/Paper';
-import Grid from '@mui/material/Grid';
-// import Item from '@mui/material/ListItem';
-// import {
-//   Grid,
-//   Segment,
-//   Container,
- 
-// } from 'semantic-ui-react';
+import {
+  Button,
+  Box,
+  Paper,
+  Grid,
+  
+} from '@mui/material'
+
+import HeaderPortfolio from "../../Components/HeaderPortfolio/HeaderPortfolio";
+import { Header } from "semantic-ui-react";
+
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -25,7 +25,12 @@ const Item = styled(Paper)(({ theme }) => ({
 
 function MainLayout() {
   return ( 
-    <Grid container spacing={2}>
+    
+    <Grid container spacing={0.5}>
+      <Grid item xs={12}>
+        <HeaderPortfolio />
+      </Grid>
+      
       <Grid item xs={8}>
         <Item>xs=8</Item>
       </Grid>
@@ -39,26 +44,7 @@ function MainLayout() {
         <Item>xs=8</Item>
       </Grid>
     </Grid>
-      
-        // <Grid 
-        //   stretched={true}
-        //   celled={true}
-        // >
-        //     <Grid.Row>
-        //     <Grid.Column  width={3}>
-        //       sidebar
 
-        //     </Grid.Column>
-        //     <Grid.Column as={Container} width={13}>
-        //       Right        
-        //       <h3> main Layout </h3>
-        //     <Outlet />
-        //   </Grid.Column>
-
-        //   </Grid.Row>
-
-
-        // </Grid>
    );
 }
 
