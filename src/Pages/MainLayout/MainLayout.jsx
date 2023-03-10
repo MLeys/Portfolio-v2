@@ -1,18 +1,22 @@
 import React from "react";
 import { Outlet } from 'react-router-dom'
 import { Link } from 'react-router-dom'
+import Grid from '@mui/material/Unstable_Grid2';
 import { styled } from '@mui/material/styles';
 import {
   Button,
   Box,
   Paper,
-  Grid,
-  Container
+  Toolbar,
+  Typography,
+  Container,
+  CssBaseline, // WHATS THIS DO?
+  
   
 } from '@mui/material'
 
 import HeaderPortfolio from "../../Components/HeaderPortfolio/HeaderPortfolio";
-import { Header } from "semantic-ui-react";
+import DrawerPortfolio from "../../Components/DrawerPortfolio/DrawerPortfolio";
 
 
 const Item = styled(Paper)(({ theme }) => ({
@@ -26,20 +30,17 @@ const Item = styled(Paper)(({ theme }) => ({
 
 function MainLayout() {
   return ( 
-    
-    <Grid container spacing={0.5}>
-      <Grid item xs={12}>
-        <HeaderPortfolio />
-      </Grid>
-      <Grid xs={4} md={2}>
-        <Item>Sidebar content item</Item>
-        <Container> Sidebar </Container>
-      </Grid>
-      <Grid xs={8} md={10}>
-      <Item>Main content item</Item>
-        <Container> Main  </Container>
-      </Grid>
-    </Grid>
+    <Box sx={{ display: 'flex' }}>
+      <CssBaseline />
+      <HeaderPortfolio />
+      <DrawerPortfolio />
+
+      <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
+        <Toolbar />
+        <Typography> MAin component</Typography>
+      </Box>
+
+    </Box>
 
    );
 }
