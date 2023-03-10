@@ -23,7 +23,11 @@ function LandingPage() {
       <Image 
         className="landingImage"
         fluid={true} 
-        src='https://imgur.com/bUeqQX5.png' 
+        // src='https://imgur.com/TxFILz0.png' 
+        // src='https://imgur.com/A4dBpPl.png'
+        // src='https://imgur.com/YuRGyJt.png'
+        // src='https://imgur.com/67TTydA.png'
+        src='https://imgur.com/aKPQCLg.png'
         
       />
 
