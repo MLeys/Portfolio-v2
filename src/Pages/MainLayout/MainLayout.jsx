@@ -7,6 +7,7 @@ import {
   Box,
   Paper,
   Grid,
+  Container
   
 } from '@mui/material'
 
@@ -30,18 +31,13 @@ function MainLayout() {
       <Grid item xs={12}>
         <HeaderPortfolio />
       </Grid>
-      
-      <Grid item xs={8}>
-        <Item>xs=8</Item>
+      <Grid xs={4} md={2}>
+        <Item>Sidebar content item</Item>
+        <Container> Sidebar </Container>
       </Grid>
-      <Grid item xs={4}>
-        <Item>xs=4</Item>
-      </Grid>
-      <Grid item xs={4}>
-        <Item>xs=4</Item>
-      </Grid>
-      <Grid item xs={8}>
-        <Item>xs=8</Item>
+      <Grid xs={8} md={10}>
+      <Item>Main content item</Item>
+        <Container> Main  </Container>
       </Grid>
     </Grid>
 
