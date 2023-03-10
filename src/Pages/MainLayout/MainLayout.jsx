@@ -31,8 +31,9 @@ const Item = styled(Paper)(({ theme }) => ({
 function MainLayout() {
   return ( 
     <Box sx={{ display: 'flex' }}>
-      <CssBaseline />
-      <HeaderPortfolio />
+      {/* <CssBaseline /> */}
+      {/* <HeaderPortfolio /> */}
+      {/* <CssBaseline /> */}
       <DrawerPortfolio />
 
       <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
