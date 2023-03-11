@@ -28,7 +28,7 @@ function LandingPage() {
         // src='https://imgur.com/YuRGyJt.png'
         // src='https://imgur.com/67TTydA.png'
         src='https://imgur.com/aKPQCLg.png'
-        https://i.imgur.com/FPjCW0h.png
+ 
       />
 
       <Rail

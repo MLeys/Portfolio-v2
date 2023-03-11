@@ -19,29 +19,27 @@ import HeaderPortfolio from "../../Components/HeaderPortfolio/HeaderPortfolio";
 import DrawerPortfolio from "../../Components/DrawerPortfolio/DrawerPortfolio";
 
 
-const Item = styled(Paper)(({ theme }) => ({
-  backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
-  ...theme.typography.body2,
-  padding: theme.spacing(1),
-  textAlign: 'center',
-  color: theme.palette.text.secondary,
-}));
-
-
 function MainLayout() {
-  return ( 
-    <Box sx={{ display: 'flex' }}>
-      {/* <CssBaseline /> */}
-      {/* <HeaderPortfolio /> */}
-      {/* <CssBaseline /> */}
-      <DrawerPortfolio />
+  const [mobileOpen, setMobileOpen] = React.useState(false);
 
-      <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
-        <Toolbar />
-        <Typography> MAin component</Typography>
+  function handleDrawerToggle() {
+    setMobileOpen(!mobileOpen);
+  };
+
+  return ( 
+    <Box component="main"   sx={{ display: 'flex' }}>
+      <HeaderPortfolio handleDrawerToggle={handleDrawerToggle} />
+      <DrawerPortfolio handleDrawerToggle={handleDrawerToggle} mobileOpen={mobileOpen}/>
+
+      <Box sx={{ flexGrow: 1, p: 2 }}>
+        <Toolbar /> {/* Provides spacing away from header */}
+        
+        <Outlet/>
       </Box>
 
     </Box>
+          
+
 
    );
 }
