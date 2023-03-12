@@ -18,7 +18,7 @@ import Container from '@mui/material/Container';
 const drawerWidth = 120;
 
 
-function DrawerPortfolio(props: { handleDrawerToggle?: any; mobileOpen?: any; }) {
+function DrawerPortfolio(props: { handleDrawerToggle?: any; mobileOpen?: any;  drawerWidth?: Number}) {
   const { handleDrawerToggle } = props;
   const {mobileOpen} = props
 
@@ -61,6 +61,7 @@ function DrawerPortfolio(props: { handleDrawerToggle?: any; mobileOpen?: any; })
     >
       {/* Drawer for small screen with menu action */}
       <Drawer
+        
         variant="temporary"
         open={mobileOpen}
         onClose={handleDrawerToggle}

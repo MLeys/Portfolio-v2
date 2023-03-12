@@ -6,16 +6,18 @@ import {
   Container,
   Stack
 }
-
 from '@mui/material'
 
+import AboutDisplay from '../../Components/AboutDisplay/AboutDisplay'
+import SkillsDisplay from '../../Components/SkillsDisplay/SkillsDisplay'
+import ProjectsDisplay from '../../Components/ProjectsDisplay/ProjectsDisplay'
+import ContactDisplay from '../../Components/ContactDisplay/ContactDisplay'
 
 function HomePage() {
 
   const boxProps = {
     width: '100',
-    height: 500,
-    backgroundColor: 'primary.light',
+    height: '85vh',
     opacity: 1,
     '&:hover': {
       backgroundColor: 'seondary.main',
@@ -24,29 +26,31 @@ function HomePage() {
   }
 
 
+
   return ( 
-    
-      <Stack
-        direction="column"
-        justifyContent="flex-start"
-        alignItems="stretch"
-        spacing={1}
-      >
-        <Box sx={boxProps} className='introBox'>
-          <Button variant='contained' component={Link} to="/">
-              Back to Landing
-          </Button>
+    <div>
+      <Box sx={boxProps} className='introBox'>
+        <Button variant='contained' component={Link} to="/">
+            Back to Landing
+        </Button>
 
-        </Box>
-        <Box className='aboutBox'sx={boxProps}> about</Box>
-        <Box className='techBox' sx={boxProps}>tech</Box>
-        <Box className='projectsBox' sx={boxProps}>projects</Box>
-        <Box className='contactBox' sx={boxProps}>contact</Box>
+      </Box>
+      <Box className='aboutBox'sx={boxProps}> 
+        <AboutDisplay />
+      </Box>
+      <Box className='techBox' sx={boxProps}>
+        <SkillsDisplay />
+      </Box>
+      <Box className='projectsBox' sx={boxProps}> 
+        <ProjectsDisplay />
+      </Box>
+      <Box className='contactBox' sx={boxProps}>
+        <ContactDisplay />
+      </Box>
 
-      
+    </div>
 
-      </Stack>
-
+ 
 
 
     

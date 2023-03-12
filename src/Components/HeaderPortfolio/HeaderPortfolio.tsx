@@ -13,7 +13,8 @@ import {
   Avatar,
   Button,
   Tooltip,
-  MenuItem
+  MenuItem,
+  CssBaseline
 } from '@mui/material'
 
 const pages = ['Projects', 'Experience', 'Resume'];
@@ -28,7 +29,6 @@ function HeaderPortfolio(props: { handleDrawerToggle?: any; }) {
   return (
     <AppBar
         position="fixed"
-
       >
         <Toolbar 
           sx={{ 
@@ -65,6 +65,7 @@ function HeaderPortfolio(props: { handleDrawerToggle?: any; }) {
             Mike Leys
           </Typography>
         </Toolbar>
+       
       </AppBar>
   );
 }
