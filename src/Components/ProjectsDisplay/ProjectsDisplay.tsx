@@ -1,10 +1,22 @@
 import * as React from 'react';
+import {
+  Paper,
+  Card,
+  CardActionArea,
+  CardContent
+
+
+} from '@mui/material'
 
 function ProjectsDisplay() {
   return ( 
-    <div>
-      Projects Display
-    </div>
+    <Paper elevation={21} variant='elevation'>
+      
+      <Card>
+        Card 1
+      </Card> 
+    </Paper>
+
    );
 }
 
