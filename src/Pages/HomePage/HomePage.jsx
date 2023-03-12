@@ -17,7 +17,7 @@ function HomePage() {
 
   const boxProps = {
     width: '100',
-    height: '85vh',
+    minHeight: '30vh',
     opacity: 1,
     '&:hover': {
       backgroundColor: 'seondary.main',

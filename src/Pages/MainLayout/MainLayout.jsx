@@ -21,7 +21,7 @@ import DrawerPortfolio from "../../Components/DrawerPortfolio/DrawerPortfolio";
 
 const boxProps = {
   width: '100',
-  height: '85vh',
+  minHeight: '25vh',
   
   opacity: 1,
   '&:hover': {
